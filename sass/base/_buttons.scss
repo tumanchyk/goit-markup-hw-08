@@ -1,0 +1,49 @@
+%btn {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    color:  $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: $box-shadow-btn;
+    transition: background-color $transition-duration  $timing-function;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color:  $color-active-btn;
+    }
+  }
+
+  
+  .filter__btn {
+    padding: 6px 22px;
+    background-color: $secondary-light-bg-color;
+    color: $primary-black-color;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: background-color $transition-duration  $timing-function,
+      color $transition-duration  $timing-function,
+      box-shadow $transition-duration  $timing-function;
+     
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        color: $primary-white-color;
+        box-shadow: $shadow-filter-btn;
+      }
+    }
+  
+  

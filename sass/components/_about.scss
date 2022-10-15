@@ -1,0 +1,36 @@
+.about {
+    padding-top: 47px;
+display: none;
+    &__title{
+      @extend %title;
+    }
+    @media screen and (min-width: 1200px){
+      display: block;
+      }
+  }
+  
+  .about__list {
+    display: flex;
+    & > li:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .about__item {
+    position: relative;
+
+    & p {
+      position: absolute;
+      bottom: 0;
+      font-weight: 700;
+      width: 100%;
+      padding: 27px 0;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: $primary-white-color;
+      background: $box-label;
+      text-align: center;
+    }
+  }
+  
+  

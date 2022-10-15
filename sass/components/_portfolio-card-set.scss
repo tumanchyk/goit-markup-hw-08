@@ -1,0 +1,66 @@
+
+.portfolio__card-set {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .card {
+    width: 370px;
+    margin: 15px;
+  }
+  
+  .card__wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .card__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    color: $primary-white-color;
+    background-color: $overlay-bg;
+    transform: translateY(100%);
+    transition: transform $transition-duration  $timing-function;;
+  
+    & p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .card__link:hover &,
+    .card__link:focus & {
+      transform: translateY(0%);
+    }
+  }
+ 
+  
+  .card__info {
+    padding: 20px 24px;
+    border: 1px solid $border-color;
+    border-top: none;
+  }
+  .card__title {
+    color: $primary-black-color;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .card__desc {
+    font-size: 16px;
+    line-height: 1.9;
+    color: $primary-text-color;
+  }
+  .card__link {
+    box-shadow: none;
+    transition: box-shadow $transition-duration  $timing-function;;
+    &:hover,
+  &:focus {
+    display: block;
+    box-shadow: $hover-shadow-card;
+  }
+  }
+  
+ 
+  

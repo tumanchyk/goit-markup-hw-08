@@ -1,0 +1,48 @@
+.team {
+    min-width: 1200px;
+    background: $secondary-light-bg-color;
+
+    &__list {
+      display: flex;
+    }
+    &__title {
+      @extend %title;
+    }
+  }
+  
+  .team__worker {
+    width: 270px;
+    background-color: $primary-white-color;
+    box-shadow: $shadow-team-card;
+    border-radius: 0 0 4px 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  .worker__info {
+    padding: 30px 0;
+  }
+  .worker__name {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: center;
+  }
+  .worker__position {
+    font-size: 16px;
+    line-height: 1.19;
+    color: $primary-text-color;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .worker__social__link {
+    @extend %social__link;
+    background-color: transparent;
+    color: $icon-grey-color;
+  }
+  
+ 
