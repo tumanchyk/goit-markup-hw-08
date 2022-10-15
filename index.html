@@ -161,19 +161,30 @@
           <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__list lists">
             <li class="about__item">
-              <img src="./images/img.jpg" alt="Робочий процес" width="370" />
+              <img
+                srcset="./images/img-1-2x.jpg 2x"
+                src="./images/img-1-1x.jpg"
+                alt="Робочий процес"
+                width="370"
+              />
               <p>Десктопні додатки</p>
             </li>
             <li class="about__item">
               <img
-                src="./images/box2.jpg"
+                srcset="./images/img-2-2x.jpg 2x"
+                src="./images/img-2-1x.jpg"
                 alt="Адаптивна верстка"
                 width="370"
               />
               <p>Мобільні додатки</p>
             </li>
             <li class="about__item">
-              <img src="./images/box3.jpg" alt="Схема кольорів" width="370" />
+              <img
+                srcset="./images/img-3-2x.jpg 2x"
+                src="./images/img-3-1x.jpg"
+                alt="Схема кольорів"
+                width="370"
+              />
               <p>Дизайнерські рішення</p>
             </li>
           </ul>
@@ -184,7 +195,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list lists">
             <li class="team__worker">
-              <img src="./images/man1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man1-desk-1x.jpg 1x,
+                    ./images/team/man1-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man1-tab-1x.jpg 1x,
+                    ./images/team/man1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man1-mb-1x.jpg 1x,
+                    ./images/team/man1-mb-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team/man1-mb-1x.jpg" alt="Ігор Дем'яненко"/>
+              </picture>
               <div class="worker__info">
                 <h3 class="worker__name">Ігор Дем'яненко</h3>
                 <p class="worker__position">Product Designer</p>
@@ -221,7 +257,33 @@
               </div>
             </li>
             <li class="team__worker">
-              <img src="./images/man2.jpg" alt="Ольга Рєпіна" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man2-desk-1x.jpg 1x,
+                    ./images/team/man2-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man2-tab-1x.jpg 1x,
+                    ./images/team/man2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man2-mb-1x.jpg 1x,
+                    ./images/team/man2-mb-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team/man2-mb-1x.jpg" alt="Ольга Рєпіна" />
+              </picture>
+
               <div class="worker__info">
                 <h3 class="worker__name">Ольга Рєпіна</h3>
                 <p class="worker__position">Frontend Developer</p>
@@ -258,7 +320,33 @@
               </div>
             </li>
             <li class="team__worker">
-              <img src="./images/man3.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man3-desk-1x.jpg 1x,
+                    ./images/team/man3-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man3-tab-1x.jpg 1x,
+                    ./images/team/man3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man3-mb-1x.jpg 1x,
+                    ./images/team/man3-mb-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team/man3-mb-1x.jpg" alt="Микола Тарасов"/>
+              </picture>
+            
               <div class="worker__info">
                 <h3 class="worker__name">Микола Тарасов</h3>
                 <p class="worker__position">Marketing</p>
@@ -295,7 +383,33 @@
               </div>
             </li>
             <li class="team__worker">
-              <img src="./images/man4.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man4-desk-1x.jpg 1x,
+                    ./images/team/man4-desk-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man4-tab-1x.jpg 1x,
+                    ./images/team/man4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/man4-mb-1x.jpg 1x,
+                    ./images/team/man4-mb-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/team/man4-mb-1x.jpg" alt="Михайло Єрмаков"/>
+              </picture>
+
               <div class="worker__info">
                 <h3 class="worker__name">Михайло Єрмаков</h3>
                 <p class="worker__position">UI Designer</p>

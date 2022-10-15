@@ -33,16 +33,18 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-@media screen and (min-width: 480px){
-  width: 480px;
-}
-@media screen and (min-width: 768px){
-  width: 768px;
-}
-@media screen and (min-width: 1200px){
-  width: 1200px;
-}
-  
+
+   
+    @include mobile {
+      width: 480px;
+    }
+
+    @include tablet {
+      width: 768px;
+    }
+    @include desktop {
+      width: 1200px;
+    }
   }
   img {
     display: block;
@@ -52,10 +54,11 @@
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px){
-        padding-top: 94px;
+    @include desktop {
+      padding-top: 94px;
         padding-bottom: 94px;
-      }
+    }
+   
   }
   .lists {
     margin: 0;

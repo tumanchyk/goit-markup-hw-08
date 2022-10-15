@@ -1,48 +1,59 @@
 .team {
-    min-width: 1200px;
-    background: $secondary-light-bg-color;
+  background: $secondary-light-bg-color;
 
-    &__list {
-      display: flex;
-    }
-    &__title {
-      @extend %title;
-    }
+  &__title {
+    @extend %title;
   }
-  
-  .team__worker {
-    width: 270px;
-    background-color: $primary-white-color;
-    box-shadow: $shadow-team-card;
-    border-radius: 0 0 4px 4px;
+}
+.team__list {
+  margin: -15px;
+  display: flex;
+  @include max-mobile {
+      flex-direction: column;     }
+ 
+      @include mobile {
+    flex-wrap: wrap;     }
+}
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+.team__worker {
+  margin: 15px;
+  @include mobile {
+  flex-basis: calc((100% - 60px)/ 2);
   }
-  
-  .worker__info {
-    padding: 30px 0;
-  }
-  .worker__name {
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.19;
-    text-align: center;
-  }
-  .worker__position {
-    font-size: 16px;
-    line-height: 1.19;
-    color: $primary-text-color;
-    text-align: center;
-    margin-bottom: 16px;
+  @include desktop {
+  flex-basis: calc((100% - 120px)/ 4);
   }
 
-  .worker__social__link {
-    @extend %social__link;
-    background-color: transparent;
-    color: $icon-grey-color;
-  }
-  
+  background-color: $primary-white-color;
+  box-shadow: $shadow-team-card;
+  border-radius: 0 0 4px 4px;
+}
+
+.worker__info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @include desktop {
+          padding-bottom: 30px;
+      }
+}
+.worker__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+}
+.worker__position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primary-text-color;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.worker__social__link {
+  @extend %social__link;
+  background-color: transparent;
+  color: $icon-grey-color;
+}
  
