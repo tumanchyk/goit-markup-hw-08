@@ -7,6 +7,7 @@
   background-color: $backdrop-color;
   opacity: 1;
   display: flex;
+  z-index: 5;
 &.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -21,17 +22,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
+  width: calc(100% - 30px);
   padding: 40px;
   background: $primary-white-color;
   box-shadow: $modal-box-shadow;
   border-radius: 4px;
   transition: transform $transition-duration  $timing-function;
-
+z-index: 7;
 .backdrop.is-hidden & {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
+@include max-mobile {
+  max-width: 450px;
+}
+@include tablet {
+  width: 450px;
+}
 @include desktop {
   width: 530px;
 }

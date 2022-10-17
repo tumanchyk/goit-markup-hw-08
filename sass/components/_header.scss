@@ -64,6 +64,7 @@ align-items: center;
 }
 display: flex;
 align-items: center;
+z-index: 3;
 }
 .main-nav__list {
   @include tablet {
