@@ -960,16 +960,16 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
 }
 .card__link:hover .card__overlay, .card__link:focus .card__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .card__overlay {
-    font-weight: 14px;
+    font-weight: 18px;
   }
 }
 

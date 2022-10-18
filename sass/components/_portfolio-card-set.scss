@@ -48,7 +48,7 @@ height: 147px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
   }
   .card__link:hover &,
@@ -56,8 +56,8 @@ height: 147px;
     transform: translateY(0%);
   }
 
-  @include max-mobile {
-     font-weight: 14px;
+  @include mobile {
+     font-weight: 18px;
   }
 }
 
