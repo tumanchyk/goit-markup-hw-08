@@ -441,6 +441,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: -10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -458,6 +461,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
 }
 .menu__socials-item:not(:last-child)::after {
   display: inline-block;
@@ -960,17 +964,17 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 14px;
   line-height: 1.6;
+  font-size: 14px;
+}
+@media screen and (min-width: 400px) {
+  .card__overlay p {
+    font-size: 18px;
+  }
 }
 .card__link:hover .card__overlay, .card__link:focus .card__overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
-}
-@media screen and (min-width: 480px) {
-  .card__overlay {
-    font-weight: 18px;
-  }
 }
 
 .card__info {

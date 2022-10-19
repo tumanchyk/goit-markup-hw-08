@@ -201,6 +201,8 @@ color: currentColor;  }
   position: absolute;
   bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
   align-items: center;
   @include tablet {
     display: none;
@@ -209,7 +211,7 @@ color: currentColor;  }
 .menu__socials-item{
   display: flex;
   align-items: center;
-
+margin-bottom: 10px;
 &:not(:last-child){
   &::after{
     display: inline-block;
